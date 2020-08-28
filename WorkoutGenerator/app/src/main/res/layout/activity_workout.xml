@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WorkoutActivity">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/wNameTextInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Workout Name" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="How much time do you have?  (MINUTES)"
+        app:layout_constraintBottom_toTopOf="@+id/wDurationRadioGroup"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/wDurationRadioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_orange_light"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <RadioButton
+            android:id="@+id/fifteenB"
+            android:layout_width="147dp"
+            android:layout_height="wrap_content"
+            android:text="15" />
+
+        <RadioButton
+            android:id="@+id/thirtyB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="30" />
+
+        <RadioButton
+            android:id="@+id/sixtyB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="60" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="206dp"
+        android:text="What would you like to work out?"
+        app:layout_constraintBottom_toTopOf="@+id/wTypeRadioGroup"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/wTypeRadioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="305dp"
+        android:background="@android:color/holo_orange_light"
+        app:layout_constraintBottom_toTopOf="@+id/gen_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <RadioButton
+            android:id="@+id/upperB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Upper Body" />
+
+        <RadioButton
+            android:id="@+id/lowerB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lower Body" />
+
+        <RadioButton
+            android:id="@+id/fullB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Full Body" />
+
+        <RadioButton
+            android:id="@+id/coreB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Core" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/gen_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="155dp"
+        android:layout_marginEnd="163dp"
+        android:layout_marginBottom="52dp"
+        android:text="Generate Workout"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.618"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?android:attr/selectableItemBackground"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TextView
+            android:id="@+id/wExerciseTV"
+            android:layout_width="201dp"
+            android:layout_height="wrap_content"
+            android:background="#FFCE3B"
+            android:gravity="center"
+            android:text="Exercise" />
+
+        <TextView
+            android:id="@+id/wRepsTV"
+            android:layout_width="99dp"
+            android:layout_height="wrap_content"
+            android:background="#FFCE3B"
+            android:gravity="center"
+            android:text="Reps" />
+
+        <TextView
+            android:id="@+id/wSetsTV"
+            android:layout_width="98dp"
+            android:layout_height="wrap_content"
+            android:background="#FFCE3B"
+            android:gravity="center"
+            android:text="Sets" />
+    </TableRow>
+</LinearLayout>
